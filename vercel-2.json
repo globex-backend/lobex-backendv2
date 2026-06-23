@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "*.js", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/index_v5.html" },
+    { "src": "/login", "dest": "/login_v5.html" },
+    { "src": "/intake", "dest": "/mna_portal_v5.html" },
+    { "src": "/consent", "dest": "/consent_monitoring.html" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
